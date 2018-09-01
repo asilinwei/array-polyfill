@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>splice</title>
+</head>
+<body>
+	<script src="../src/splice.js"></script>
+	<script type="text/javascript">
+		var array=[1,2,3,4];
+		var another=array._splice(1,2);
+
+		console.log(array);  // => [1,4]
+		console.log(another);  // =>[2,3]
+
+		array=['hello','world','Nicholas'];
+		array._splice(1,0,'color','blue');
+
+		console.log(array);  
+		// => ['hello','color','blue','world','Nicholas']
+	</script>
+</body>
+</html>

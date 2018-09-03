@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>concat</title>
+</head>
+<body>
+	<script src="../src/concat.js"></script>
+	<script type="text/javascript">
+		var array=[1,2,3,4];
+		var another=array._concat(5,6,[7,8,9]);
+
+		console.log(array);  // => [1,2,3,4]
+		console.log(another);  // => [1,2,3,4,5,6,7,8,9]
+	</script>
+</body>
+</html>

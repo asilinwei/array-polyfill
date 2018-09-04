@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>every</title>
+</head>
+<body>
+	<script src="../src/every.js"></script>
+	<script type="text/javascript">
+		var array=[1,2,3,4,5];
+		var is=array._every(function(e){
+			return e>0;
+		});
+		console.log(is);  // => true
+
+		is=array._every(function(e){
+			return e>3;
+		});
+		console.log(is);  // => false
+
+		is=array._every(12);  // => throw error.
+	</script>
+</body>
+</html>

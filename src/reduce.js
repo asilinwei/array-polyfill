@@ -21,6 +21,9 @@ if(!Array.prototype._reduce){
 		};
 		return function(fn){
 			if(isFunction(fn)){
+				if(!length(this)){
+					error('ElementError','The array is empty.');
+				}
 				return reduce(this,fn);
 			}
 			error('ArgsError','Not function.');

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>reduce</title>
+</head>
+<body>
+	 <script src="../src/reduce.js"></script>
+	 <script type="text/javascript">
+	 	var array=[1,2,3,4,5];
+	 	var sum=array._reduce(function(pre,cur,index,arr){
+	 		return pre+cur;
+	 	});
+	 	console.log(sum);  // => 15
+
+
+	 	array=['hello','world','linwei'];
+	 	sum=array._reduce(function(pre,cur,index,arr){
+	 		return pre+cur;
+	 	});
+	 	console.log(sum);  // => 'helloworldlinwei'
+
+
+	 	array=[];
+	 	sum=array._reduce(function(pre,cur,index,arr){
+	 		return pre+cur;
+	 	});
+	 	console.log(sum);
+	 	// throw error: 
+	 	// => type: 'ElementError'
+	 	// => message: 'The array is empty.'
+	 </script>
+</body>
+</html>

@@ -1,3 +1,11 @@
+/**
+ * 2018-09-06
+ * @LinWei
+ *
+ * polyfill of  
+ *
+ */
+
 if(!Array.prototype._reduce){
 	Array.prototype._reduce=(function(){
 		"use strict";

@@ -2,8 +2,8 @@
  * 2018-09-03
  * @LinWei
  *
- * Polyfill of Array.prototype.concat.
- * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat.
+ * polyfill of Array.prototype.concat.
+ * see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat.
  *
  */
 

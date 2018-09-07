@@ -2,8 +2,8 @@
  * 2018-09-04
  * @LinWei
  *
- * Polyfill of Array.prototype.every
- * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every.
+ * polyfill of Array.prototype.every
+ * see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every.
  *
  */
 

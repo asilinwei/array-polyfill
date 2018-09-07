@@ -2,8 +2,8 @@
  * 2018-09-01
  * @LinWei
  *
- * Polyfill of Array.prototype.splice.
- * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice.
+ * polyfill of Array.prototype.splice.
+ * see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice.
  *
  */
 

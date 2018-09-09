@@ -14,3 +14,4 @@ Content:
 |[concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)|[concat.js](https://github.com/asilinwei/array-polyfill/blob/master/src/concat.js)|
 |[every](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)|[every.js](https://github.com/asilinwei/array-polyfill/blob/master/src/every.js)|
 |[reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)|[reduce.js](https://github.com/asilinwei/array-polyfill/blob/master/src/reduce.js)|
+|[join](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)|[join.js](https://github.com/asilinwei/array-polyfill/blob/master/src/join.js)|

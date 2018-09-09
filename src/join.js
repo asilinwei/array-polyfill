@@ -1,9 +1,20 @@
+/**
+ * 2018-09-09
+ * @LinWei
+ *
+ * polyfill of Array.prototype.join
+ * see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+ *
+ */
+
 if(!Array.prototype._join){
 	Array.prototype._join=(function(){
 		"use strict";
+
 		var length=function(array){
 			return array.length;
 		};
+
 		var join=function(array,string){
 			var str='',
 			    i=0,
@@ -15,8 +26,9 @@ if(!Array.prototype._join){
 			}   
 			return str; 
 		};
+
 		return function(string){
-			string=string!==undefined?string:'';
+			string=string!==undefined?string:',';
 			return join(this,''+string);
 		};
 	})();

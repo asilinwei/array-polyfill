@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>join</title>
+</head>
+<body>
+	<script src="../src/join.js"></script>
+	<script type="text/javascript">
+
+		var array=['a','b','c'];
+		console.log(array._join('~'));  
+		// => 'a~b~c'
+
+		console.log(array._join());
+		// => 'a,b,c'
+
+		console.log(array._join(6));
+		// => 'a6b6c'
+
+		console.log(array._join(null));
+		// => 'anullbnullc'
+
+		console.log(array._join(''));
+		// => 'abc'
+
+		array=[1,2,3];
+		console.log(array._join('~'));
+		// => '1~2~3'
+
+	</script>
+</body>
+</html>

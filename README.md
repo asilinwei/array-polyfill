@@ -25,7 +25,7 @@ to the methods about Array in
 ```
 Array.prototype._chunk
 ```    
-see [_.chunk](https://lodash.com/docs/4.17.10#chunk)    [source](https://github.com/asilinwei/array-polyfill/blob/master/src/chunk.js)    
+see [_.chunk](https://lodash.com/docs/4.17.10#chunk)&nbsp;&nbsp;&nbsp;&nbsp;[source](https://github.com/asilinwei/array-polyfill/blob/master/src/chunk.js)    
     
 Example:  
 ```

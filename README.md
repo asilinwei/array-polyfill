@@ -21,6 +21,9 @@ There are some new methods,
 the features of them are similar  
 to the methods about Array in 
 [lodash](https://lodash.com/).  
-  
-|lodash|new feature|
-|------|-----------|           
+   
+```
+Array.prototype._chunk
+```   
+[source](https://github.com/asilinwei/array-polyfill/blob/master/src/chunk.js)  
+see [_.chunk](https://lodash.com/docs/4.17.10#chunk)        

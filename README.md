@@ -32,15 +32,15 @@ Example:
 ```
 var array = [1, 2, 3, 4, 5];
 
-console.log(array._chunk());
-// => [[1],[2],[3],[4],[5]]
+array._chunk()
+// => [[1], [2], [3], [4], [5]]
 
-console.log(array._chunk(2));
-// => [[1,2],[3,4],[5]]
+array._chunk(2)
+// => [[1, 2], [3, 4], [5]]
 
-console.log(array._chunk(3));
-// => [[1,2,3],[4,5]]
+array._chunk(3)
+// => [[1, 2, 3], [4, 5]]
 
-console.log(array._chunk('a'));
+array._chunk('a')
 // => null
 ```    

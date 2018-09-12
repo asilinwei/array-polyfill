@@ -1,3 +1,28 @@
+/**
+ * 2018-09-12
+ * @LinWei
+ *
+ * feature like _.chunk in lodash.
+ * see https://lodash.com/docs/4.17.10#chunk.
+ *
+ * for example:
+ * 
+ * var array=[1,2,3,4,5];
+ * 
+ * console.log(array._chunk());
+ * // => [[1], [2], [3], [4], [5]]
+ *
+ * console.log(array._chunk(2));
+ * // => [[1, 2], [3, 4], [5]]
+ *
+ * console.log(array._chunk(3))
+ * // => [[1, 2, 3], [4, 5]]
+ *
+ * console.log(array._chunk('hello'))
+ * // => null
+ *
+ */
+
 if(!Array.prototype._chunk){
 	Array.prototype._chunk=(function(){
 		"use strict";
@@ -6,6 +31,7 @@ if(!Array.prototype._chunk){
 			return typeof value;
 		};
 
+		// chekc if it is number.
 		var isNumber=function(value){
 			return typeOf(value)==='number'&&isFinite(value);
 		};

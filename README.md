@@ -43,4 +43,18 @@ array._chunk(3)
 
 array._chunk('a')
 // => null
-```    
+```         
+      
+```
+Array.prototype._compact
+```     
+[source](https://github.com/asilinwei/array-polyfill/blob/master/src/compact.js)     
+see [_.compact](https://lodash.com/docs/4.17.10#compact) 
+       
+Example:
+```
+var array = [0, 1, false, 2, '', 3];
+
+array._compact()
+// => [1, 2, 3]
+```            

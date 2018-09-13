@@ -45,6 +45,7 @@ array._chunk('a')
 // => null
 ```         
       
+             
 ```
 Array.prototype._compact
 ```     

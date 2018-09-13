@@ -44,6 +44,9 @@ if(!Array.prototype._chunk){
 			var result=[],
 			    chunk=[],
 			    i=0;
+			if(size<=0){
+				return result;
+			}    
 			while(1){
 				chunk.push(array[i++]);
 				if(i===length(array)){

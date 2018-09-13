@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>chunk</title>
+</head>
+<body>
+	<script src="../src/chunk.js"></script>
+	<script type="text/javascript">
+		var array=[1,2,3,4,5];
+
+		console.log(array._chunk());
+		// => [[1], [2], [3], [4], [5]]
+
+		console.log(array._chunk(-1));
+		// => []
+
+		console.log(array._chunk(0));
+		// => []
+
+		console.log(array._chunk(1));
+		// => [[1], [2], [3], [4], [5]]
+
+		console.log(array._chunk(2));
+		// => [[1, 2], [3, 4], [5]]
+
+		console.log(array._chunk(3));
+		// => [[1, 2, 3], [4, 5]]
+
+		console.log(array._chunk(4));
+		// => [[1, 2, 3, 4], [5]]
+
+		console.log(array._chunk(5));
+		// => [[1, 2, 3, 4, 5]]
+
+		console.log(array._chunk(6));
+		// => [[1, 2, 3, 4, 5]]
+
+		console.log(array._chunk('a'));
+		// => null
+	</script>
+</body>
+</html>

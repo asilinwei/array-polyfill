@@ -22,19 +22,14 @@ if(!Array.prototype._difference){
 			return array.length;
 		};
 
-		/* check if it is integer. */
+		// check if it is integer.
 		var isInteger=function(value){
 			return typeof value==='number'&&
 			       isFinite(value)&&
 			       !(value%1);
 		};
 
-		/*
-		 an object is considered array-like
-		 if it is not function and has obj.length
-		 that's an integer greater than or equal to 0
-		 and less than or equal to Number.MAX_SAFE_INTEGER.
-		*/
+		// check if it is array-like object.
 		var isArrayLike=function(obj){
 			return typeof obj==='object'&&
 			       obj!==null&&

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flattenDepth</title>
+</head>
+<body>
+	<script src="../src/flattenDepth.js"></script>
+	<script type="text/javascript">
+		var array=[1,[2,3,[4]],5,[6]];
+
+		console.log(array._flattenDepth(-1));
+		// => [1, [2, 3, [4]], 5, [6]]
+
+		console.log(array._flattenDepth('a'));
+		// => [1, [2, 3, [4]], 5, [6]]
+
+		console.log(array._flattenDepth(0));
+		// => [1, [2, 3, [4]], 5, [6]]
+
+		console.log(array._flattenDepth(1));
+		// => [1, 2, 3, [4], 5, 6]
+
+		console.log(array._flattenDepth(2));
+		// => [1, 2, 3, 4, 5, 6]
+
+		console.log(array._flattenDepth(3));
+		// => [1, 2, 3, 4, 5, 6]
+	</script>
+</body>
+</html>

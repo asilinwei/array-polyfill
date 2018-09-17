@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>difference</title>
+</head>
+<body>
+	 <script src="../src/difference.js"></script>
+	 <script type="text/javascript">
+	 	var array=[1,2,3,4,5];
+
+	 	console.log(array._difference());
+	 	// => [1, 2, 3, 4, 5]
+
+	 	console.log(array._difference([],[],[]));
+	 	// => [1, 2, 3, 4, 5]
+
+	 	console.log(array._difference([1],[2],[3],[4],[5]));
+	 	// => []
+
+	 	console.log(array._difference([1,2,3,4,5]));
+	 	// => []
+
+	 	console.log(array._difference([1,2],[3,4]));
+	 	// => [5]
+
+	 	console.log(array._difference([1,2],3,4));
+	 	// => [3, 4, 5]
+
+	 	console.log(array._difference(3,4,[1,2]));
+	 	// => [3, 4, 5]
+
+	 	/* array-like object */
+
+	 	console.log(array._difference({
+	 		'0':1,
+	 		'1':2,
+	 		length:2
+	 	},{
+	 		'0':3,
+	 		'1':4,
+	 		length:2
+	 	}));
+	 	// => [5]
+
+	 	console.log(array._difference({
+	 		length:0
+	 	},{
+	 		length:0
+	 	}));
+	 	// => [1, 2, 3, 4, 5]
+
+	 	console.log(array._difference({
+	 		'0':1,
+	 		'1':2,
+	 		length:'hello'
+	 	},{
+	 		'0':3,
+	 		'1':4,
+	 		length:2
+	 	}));
+	 	// => [1, 2, 5]
+
+	 	console.log(array._difference({
+	 		'0':1,
+	 		'1':2,
+	 		length:2
+	 	},{
+	 		'0':3,
+	 		'1':4,
+	 		length:'hello'
+	 	}));
+	 	// => [3, 4, 5]
+
+	 	// function is not array-like object.
+
+	 	var foo=function(){};
+
+	 	foo['0']=1;
+	 	foo['1']=2;
+
+	 	console.log(array._difference([3,4],foo));
+	 	// => [1, 2, 5]
+
+	 	console.log(array._difference(foo,[3,4]));
+	 	// => [1, 2, 5]
+
+	 	array=[{a:12}];
+
+	 	console.log(array._difference([{a:12}]));
+	 	// => [{a:12}]
+	 </script>
+</body>
+</html>

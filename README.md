@@ -26,7 +26,7 @@ to the methods about Array in
 Array.prototype._chunk
 ```    
 [source](https://github.com/asilinwei/array-polyfill/blob/master/src/chunk.js)    
-see [_.chunk](https://lodash.com/docs/4.17.10#chunk)
+see [_.chunk](https://lodash.com/docs/4.17.10#chunk) in lodash.
     
 Example:  
 ```
@@ -50,7 +50,7 @@ array._chunk('a')
 Array.prototype._compact
 ```     
 [source](https://github.com/asilinwei/array-polyfill/blob/master/src/compact.js)     
-see [_.compact](https://lodash.com/docs/4.17.10#compact) 
+see [_.compact](https://lodash.com/docs/4.17.10#compact) in lodash.
        
 Example:
 ```
@@ -58,4 +58,19 @@ var array = [0, 1, false, 2, '', 3];
 
 array._compact()
 // => [1, 2, 3]
-```            
+```       
+------------------------------
+------------------------------
+```
+Array.prototype._difference
+```       
+[source](https://github.com/asilinwei/array-polyfill/blob/master/src/difference.js)          
+see [_.difference](https://lodash.com/docs/4.17.10#difference) in lodash.      
+       
+Example:            
+```
+var array=[1, 2, 3, 4, 5];
+
+array._difference([1, 2], [3, 4])
+// => [5]
+```

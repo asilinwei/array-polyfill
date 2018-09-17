@@ -43,6 +43,9 @@ if(!Array.prototype._difference){
 			    j;
 			while(1){
 				if(!isArrayLike(obj[i])){
+					if(++i>=length(obj)){
+						break;
+					}
 					continue;
 				}
 				j=0;

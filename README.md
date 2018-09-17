@@ -44,7 +44,9 @@ array._chunk(3)
 array._chunk('a')
 // => null
 ```         
---------------------            
+<hr>
+<hr>
+<hr>          
 ```
 Array.prototype._compact
 ```     

@@ -69,7 +69,7 @@ see [_.difference](https://lodash.com/docs/4.17.10#difference) in lodash.
        
 Example:            
 ```
-var array=[1, 2, 3, 4, 5];
+var array = [1, 2, 3, 4, 5];
 
 array._difference([1, 2], [3, 4])
 // => [5]

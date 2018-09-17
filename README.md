@@ -73,4 +73,22 @@ var array = [1, 2, 3, 4, 5];
 
 array._difference([1, 2], [3, 4])
 // => [5]
+```      
+-----------------------------
+-----------------------------
 ```
+Array.prototype._flattenDepth
+```   
+[source](https://github.com/asilinwei/array-polyfill/blob/master/src/flattenDepth.js)       
+see [_.flattenDepth](https://lodash.com/docs/4.17.10#flattenDepth) in lodash.    
+         
+Example:
+```
+var array = [1, [2, 3, [4]], 5, [6]];
+
+array._flattenDepth(1)
+// => [1, 2, 3, [4], 5, 6]
+
+array._flattenDepth(2)
+// => [1, 2, 3, 4, 5, 6]
+```         

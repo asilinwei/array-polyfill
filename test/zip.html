@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zip</title>
+</head>
+<body>
+	<script src="../src/zip.js"></script>
+	<script type="text/javascript">
+		var array=[['a','b'],[1,2],[true,false]];
+
+		console.log(array._zip());
+		// => [['a', 1, true], ['b', 2, false]]
+
+		array=[['a'],[1,2],[true,false]];
+
+		console.log(array._zip());
+		// => [['a', 1, true], [undefined, 2, false]]
+
+		array=[['a'],[1],[true,false]];
+
+		console.log(array._zip());
+		// => [[a, 1, true], [undefined, undefined, false]]
+
+		array=[['a','b'],[1],[true,false]];
+
+		console.log(array._zip());
+		// => [['a', 1, true], ['b', undefined, false]]
+
+		array=[['a','b'],[1],[true]];
+
+		console.log(array._zip());
+		// => [['a', 1, true], ['b', undefined, undefined]]
+
+		array=[['a','b'],[1,2],[true]];
+
+		console.log(array._zip());
+		// => [['a', 1, true], ['b',2,undefined]]
+
+		array=[['a'],[1,2],[true]];
+
+		console.log(array._zip());
+		// => [['a', 1, true], [undefined, 2, undefined]]
+
+		array=[1,2,['a','b'],3,[1,2],'hello',[true,false]];
+
+		console.log(array._zip());
+		// => [['a', 1, true], ['b', 2, false]]
+	</script>
+</body>
+</html>

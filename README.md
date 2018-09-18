@@ -91,4 +91,19 @@ array._flattenDepth(1)
 
 array._flattenDepth(2)
 // => [1, 2, 3, 4, 5, 6]
-```         
+```   
+--------------------------------
+--------------------------------
+```
+Array.prototype._zip
+```   
+[source](https://github.com/asilinwei/array-polyfill/blob/master/src/zip.js)     
+see [_.zip](https://lodash.com/docs/4.17.10#zip) in lodash.   
+       
+Example:   
+```
+var array = [['a', 'b'], [1, 2], [true, false]];
+
+array._zip();
+// => [['a', 1, true], ['b', 2, false]]
+```             

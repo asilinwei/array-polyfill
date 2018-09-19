@@ -22,6 +22,7 @@ if(!Array.prototype._differenceBy){
 			return obj!==null&&
 			       isInteger(length(obj))&&
 			       !isFun(obj)&&
+			       !isString(obj)&&
 			       length(obj)>=0&&
 			       length(obj)<=Number.MAX_SAFE_INTEGER;
 		};

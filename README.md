@@ -87,8 +87,8 @@ Example:
 var array = [2.1, 1.2];
 
 array._differenceBy(
-	[2.3, 3.4],
-	Math.floor
+    [2.3, 3.4],
+    Math.floor
 )
 // => [1.2]
 

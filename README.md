@@ -77,6 +77,29 @@ array._difference([1, 2], [3, 4])
 -----------------------------
 -----------------------------
 ```
+Array.prototype._differenceBy
+```
+[source](https://github.com/asilinwei/array-polyfill/blob/master/src/differenceBy.js)    
+see [_.differenceBy](https://lodash.com/docs/4.17.10#differenceBy)    
+           
+Example:
+```
+var array = [2.1, 1.2];
+
+array._differenceBy(
+	[2.3, 3.4],
+	Math.floor
+)
+// => [1.2]
+
+array = [{x:1}, {x:2}];
+
+array._differenceBy([{x:1}], 'x')
+// => [{x:2}]
+```           
+-----------------------------
+-----------------------------
+```
 Array.prototype._flattenDepth
 ```   
 [source](https://github.com/asilinwei/array-polyfill/blob/master/src/flattenDepth.js)       

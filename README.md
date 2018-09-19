@@ -80,7 +80,7 @@ array._difference([1, 2], [3, 4])
 Array.prototype._differenceBy
 ```
 [source](https://github.com/asilinwei/array-polyfill/blob/master/src/differenceBy.js)    
-see [_.differenceBy](https://lodash.com/docs/4.17.10#differenceBy)    
+see [_.differenceBy](https://lodash.com/docs/4.17.10#differenceBy) in lodash.   
            
 Example:
 ```

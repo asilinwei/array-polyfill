@@ -92,6 +92,16 @@ array._differenceBy(
 )
 // => [1.2]
 
+array._differenceBy(
+    {
+    	'0' : 2.3,
+    	'1' : 3.4,
+    	length : 2
+    },
+    Math.floor
+)
+// => [1.2]
+
 array = [{x:1}, {x:2}];
 
 array._differenceBy([{x:1}], 'x')

@@ -37,12 +37,17 @@ if(!Array.prototype._differenceBy){
 			return typeof value==='string';
 		};
 
+		// the length of array-like object.
 		var length=function(array){
 			return array.length;
 		};
 
 		var last=function(obj){
 			return obj[length(obj)-1];
+		};
+
+		var def=function(e){
+			return e;
 		};
 
 		// check if it is integer.
@@ -91,11 +96,22 @@ if(!Array.prototype._differenceBy){
 				}
 			}
 		};
+
+		var pushAll=function(array,result){
+			for(var i=0;i<length(array);i+=1){
+				result.push(array[i]);
+			}
+		};
 		
 		return function(){
 			var args=arguments,
-			    iter=last(args),
-			    result=[];
+				iter,
+				result=[];
+			if(!length(args)){
+				pushAll(this,result);
+				return result;
+			}	    
+			iter=isArrayLike(last(args))?def:last(args);
 			if(isFun(iter)||isString(iter)){
 				iteratee(this,result,args,iter);
 			}

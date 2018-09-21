@@ -143,9 +143,9 @@ array._fromPairs();
 // array-like object.
 
 array[0] = {
-	'0': 'a',
-	'1': 1,
-	length: 2
+    '0': 'a',
+    '1': 1,
+    length: 2
 };
 
 array[1] = {

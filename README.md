@@ -128,6 +128,38 @@ array._flattenDepth(2)
 --------------------------------
 --------------------------------
 ```
+Array.prototype._fromPairs
+```   
+[source](https://github.com/asilinwei/array-polyfill/blob/master/src/fromPairs.js)       
+see [_.fromPairs](https://lodash.com/docs/4.17.10#fromPairs) in lodash.     
+        
+Example:
+```
+var array = [['a', 1], ['b', 2]];
+
+array._fromPairs();
+// => {'a': 1, 'b': 2}
+
+// array-like object.
+
+array[0] = {
+	'0': 'a',
+	'1': 1,
+	length: 2
+};
+
+array[1] = {
+    '0': 'b',
+    '1': 2,
+    length: 2
+};
+
+array._fromPairs();
+// => {'a': 1, 'b': 2}
+```        
+--------------------------------
+--------------------------------
+```
 Array.prototype._zip
 ```   
 [source](https://github.com/asilinwei/array-polyfill/blob/master/src/zip.js)     

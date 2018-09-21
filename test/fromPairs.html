@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fromPairs</title>
+</head>
+<body>
+	<script src="../src/fromPairs.js"></script>
+	<script type="text/javascript">
+		var array=[['a',1],['b',2]];
+
+		console.log(array._fromPairs());
+		// => {a: 1, b: 2}
+
+		array=[['a',1],['b']];
+
+		console.log(array._fromPairs());
+		// => {a: 1, b: undefined}
+
+		array=[['a'],['b',2]];
+
+		console.log(array._fromPairs());
+		// => {a: undefined, b: 2}
+
+		array=[[],[]];
+
+		console.log(array._fromPairs());
+		// => {"undefined": undefined}
+
+		array=[[null,1],[undefined,2]];
+
+		console.log(array._fromPairs());
+		// => {"null": 1, "undefined": 2}
+
+		array=[12,['a',1],23,'hello',['b',2],true];
+
+		console.log(array._fromPairs());
+		// => {a: 1, b: 2}
+
+		// include array-like object.
+		array=[
+		    {
+		    	'0':'a',
+		    	'1':1,
+		    	length:2
+		    },
+
+		    // not has 'length'
+		    {
+		    	'0':'b',
+		    	'1':2
+		    }
+		];
+
+		console.log(array._fromPairs());
+		// => {a: 1}
+
+		array[0]['length']=NaN;
+
+		console.log(array._fromPairs());
+		// => {}
+
+		array[0]['length']=Infinity;
+
+		console.log(array._fromPairs());
+		// => {}
+
+		array[0]['length']=-1;
+
+		console.log(array._fromPairs());
+		// => {}
+
+		array[0]['length']=1.3;
+
+		console.log(array._fromPairs());
+		// => {}
+
+		// function is not array-like object.
+		array[0]=function(){};
+
+		console.log(array._fromPairs());
+		// => {}
+
+		array[0]=null;
+
+		console.log(array._fromPairs());
+		// => {}
+
+		array[0]='hello';
+
+		console.log(array._fromPairs());
+		// => {}
+
+		array=[];
+
+		console.log(array._fromPairs());
+		// => {}
+	</script>
+</body>
+</html>

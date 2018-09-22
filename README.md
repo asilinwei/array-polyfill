@@ -110,6 +110,27 @@ array._differenceBy([{x:1}], 'x')
 -----------------------------
 -----------------------------
 ```
+Array.prototype._drop
+```   
+[source](https://github.com/asilinwei/array-polyfill/blob/master/src/drop.js)       
+see [_.drop](https://lodash.com/docs/4.17.10#drop) in lodash.    
+        
+Example:
+```
+var array = [1, 2, 3, 4, 5];
+
+array._drop()
+// => [2, 3, 4, 5]
+
+array._drop(2)
+// => [3, 4, 5]
+
+array._drop(100)
+// => []
+```        
+-----------------------------
+-----------------------------
+```
 Array.prototype._flattenDepth
 ```   
 [source](https://github.com/asilinwei/array-polyfill/blob/master/src/flattenDepth.js)       
@@ -137,7 +158,7 @@ Example:
 ```
 var array = [['a', 1], ['b', 2]];
 
-array._fromPairs();
+array._fromPairs()
 // => {'a': 1, 'b': 2}
 
 // array-like object.
@@ -154,7 +175,7 @@ array[1] = {
     length: 2
 };
 
-array._fromPairs();
+array._fromPairs()
 // => {'a': 1, 'b': 2}
 ```        
 --------------------------------
@@ -169,6 +190,6 @@ Example:
 ```
 var array = [['a', 'b'], [1, 2], [true, false]];
 
-array._zip();
+array._zip()
 // => [['a', 1, true], ['b', 2, false]]
 ```             

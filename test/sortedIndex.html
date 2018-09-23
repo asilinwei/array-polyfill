@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sortedIndex</title>
+</head>
+<body>
+	<script src="../src/sortedIndex.js"></script>
+	<script type="text/javascript">
+		var array=[0,2,4,6,8];
+
+		console.log(array._sortedIndex(-1));
+		// => 0
+
+		console.log(array._sortedIndex(0));
+		// => 0
+
+		console.log(array._sortedIndex(1));
+		// => 1
+
+		console.log(array._sortedIndex(2));
+		// => 1
+
+		console.log(array._sortedIndex(3));
+		// => 2
+
+		console.log(array._sortedIndex(4));
+		// => 2
+
+		console.log(array._sortedIndex(5));
+		// => 3
+
+		console.log(array._sortedIndex(6));
+		// => 3
+
+		console.log(array._sortedIndex(7));
+		// => 4
+
+		console.log(array._sortedIndex(8));
+		// => 4
+
+		console.log(array._sortedIndex(9));
+		// => 5
+
+		// disorder
+		array=[10,0,9,5,10,8,7,7,10,8,11];
+
+		console.log(array._sortedIndex());
+		// => 11
+
+		console.log(array._sortedIndex(-1));
+		// => 0
+
+		console.log(array._sortedIndex(0));
+		// => 0
+
+		console.log(array._sortedIndex(1));
+		// => 2
+
+		console.log(array._sortedIndex(2));
+		// => 2
+
+		console.log(array._sortedIndex(3));
+		// => 2
+
+		console.log(array._sortedIndex(4));
+		// => 2
+
+		console.log(array._sortedIndex(5));
+		// => 2
+
+		console.log(array._sortedIndex(6));
+		// => 2
+
+		console.log(array._sortedIndex(7));
+		// => 2
+
+		console.log(array._sortedIndex(8));
+		// => 2
+
+		console.log(array._sortedIndex(9));
+		// => 8
+
+		console.log(array._sortedIndex(10));
+		// => 8
+
+		console.log(array._sortedIndex(11));
+		// => 10
+
+		console.log(array._sortedIndex(12));
+		// => 11
+
+		console.log(array._sortedIndex(13));
+		// => 11
+
+		array=[10,11,2,23];
+
+		console.log(array._sortedIndex('21'));
+		// => 3
+
+		array[0]='a';
+		array[1]='c';
+		array[2]='d';
+		array[3]='e';
+
+		console.log(array._sortedIndex('b'));
+		// => 1
+
+		var obj={
+			toString:function(){
+				return 'b';
+			}
+		};
+
+		console.log(array._sortedIndex(obj));
+		// => 1
+	</script>
+</body>
+</html>

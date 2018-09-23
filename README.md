@@ -181,6 +181,21 @@ array._fromPairs()
 --------------------------------
 --------------------------------
 ```
+Array.prototype._sortedIndex
+```    
+[source](https://github.com/asilinwei/array-polyfill/blob/master/src/sortedIndex.js)     
+see [_.sortedIndex](https://lodash.com/docs/4.17.10#sortedIndex) in lodash.       
+         
+Example:
+```
+var array = [30, 50];
+
+array._sortedIndex(40)
+// => 1
+```
+--------------------------------
+--------------------------------
+```
 Array.prototype._zip
 ```   
 [source](https://github.com/asilinwei/array-polyfill/blob/master/src/zip.js)     

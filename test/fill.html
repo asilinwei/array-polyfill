@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fill</title>
+</head>
+<body>
+	<script src="../src/fill.js"></script>
+	<script src="lodash/lodash.js"></script>
+	<script type="text/javascript">
+	var array=[1,2,3,4,5];
+
+	with(console){
+
+		log('case 1: ');
+
+		log(array._fill());
+		// => [undefined, undefined, undefined, undefined, undefined]
+
+		log(array);
+		// => [undefined, undefined, undefined, undefined, undefined]
+
+	}
+
+	array=[1,2,3,4,5];
+
+	with(console){
+
+		log('case 2: ');
+
+		log(array._fill('*'));
+		// => ['*', '*', '*', '*', '*']
+
+		log(array);
+		// => ['*', '*', '*', '*', '*']
+
+	}
+
+	array=[1,2,3,4,5];
+
+	with(console){
+
+		log('case 3: ');
+
+		log(array._fill('*',-1));
+		// => ['*', '*', '*', '*', '*']
+
+		log(array);
+		// => ['*', '*', '*', '*', '*']
+	}
+
+	array=[1,2,3,4,5];
+
+	with(console){
+
+		log('case 4: ');
+
+		log(array._fill('*',0));
+		// => ['*', '*', '*', '*', '*']
+
+		log(array);
+		// => ['*', '*', '*', '*', '*']
+
+	}
+
+	array=[1,2,3,4,5];
+
+	with(console){
+
+		log('case 5: ');
+
+		log(array._fill('*',1));
+		// => [1, '*', '*', '*', '*']
+
+		log(array);
+		// => [1, '*', '*', '*', '*']
+
+	}
+
+	array=[1,2,3,4,5];
+
+	with(console){
+
+		log('case 6: ');
+
+		log(array._fill('*',2));
+		// => [1, 2, '*', '*', '*']
+
+		log(array);
+		// => [1, 2, '*', '*', '*']
+	}
+
+	array=[1,2,3,4,5];
+
+	with(console){
+
+		log('case 7: ');
+
+		log(array._fill('*',3));
+		// => [1, 2, 3, '*', '*']
+
+		log(array);
+		// => [1, 2, 3, '*', '*']
+	}
+
+	array=[1,2,3,4,5];
+
+	with(console){
+
+		log('case 8: ');
+
+		log(array._fill('*',4));
+		// => [1, 2, 3, 4, '*']
+
+		log(array);
+		// => [1, 2, 3, 4, '*']
+
+	}
+
+	array=[1,2,3,4,5];
+
+	with(console){
+
+		log('case 9: ');
+
+		log(array._fill('*',5));
+		// => [1, 2, 3, 4, 5]
+
+		log(array);
+		// => [1, 2, 3, 4, 5]
+	}
+
+	array=[1,2,3,4,5];
+
+	with(console){
+		log('case 10: ');
+
+		log(array._fill('*',6));
+		// => [1, 2, 3, 4, 5]
+
+		log(array);
+		// => [1, 2, 3, 4, 5]
+	}
+
+	array[1,2,3,4,5];
+
+	with(console){
+		log('case 11: ');
+
+		log(array._fill('*',1,4));
+		// => [1, '*', '*', '*', 5]
+
+		log(array);
+		// => [1, '*', '*', '*', 5]
+	}
+
+	array=[1,2,3,4,5];
+
+	with(console){
+		log('case 12: ');
+
+		log(array._fill('*',-4,-1));
+		// => [1, 2, 3, 4, 5]
+
+		log(array);
+		// => [1, 2, 3, 4, 5]
+	}
+
+	array=[1,2,3,4,5];
+
+	with(console){
+		log('case 13: ');
+
+		log(array._fill('*',6,9));
+		// => [1, 2, 3, 4, 5]
+
+		log(array);
+		// => [1, 2, 3, 4, 5]
+	}
+
+	array=[1,2,3,4,5];
+
+	with(console){
+
+		log('case 14: ');
+
+		log(array._fill('*',4,1));
+		// => [1, 2, 3, 4, 5]
+
+		log(array);
+		// => [1, 2, 3, 4, 5]
+	}
+
+	array=[1,2,3,4,5];
+
+	with(console){
+		log('case 15: ');
+
+		log(array._fill('*','1','4'));
+		// => [1, '*', '*', '*', 5]
+
+		log(array);
+		// => [1, '*', '*', '*', 5]
+	}
+
+	array=[1,2,3,4,5];
+
+	with(console){
+		log('case 16: ');
+
+		log(array._fill('*',1.2,4.3));
+		// => [1, '*', '*', '*', 5]
+
+		log(array);
+		// => [1, '*', '*', '*', 5]
+	}
+
+	array=[1,2,3,4,5];
+
+	with(console){
+		log('case 17: ');
+
+		log(array._fill('*',NaN,NaN));
+		// => [1, 2, 3, 4, 5]
+
+		log(array);
+		// => [1, 2, 3, 4, 5]
+	}
+	</script>
+</body>
+</html>

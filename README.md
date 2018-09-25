@@ -131,6 +131,22 @@ array._drop(100)
 -----------------------------
 -----------------------------
 ```
+Array.prototype._fill
+```
+[source](https://github.com/asilinwei/array-polyfill/blob/master/src/fill.js)     
+see [_.fill](https://lodash.com/docs/4.17.10#fill) in lodash.   
+        
+```
+var array = [1, 2, 3, 4, 5];
+
+array._fill('a', 1, 4);
+
+console.log(array);
+// => [1, 'a', 'a', 'a', 5]
+```        
+-----------------------------
+-----------------------------
+```
 Array.prototype._flattenDepth
 ```   
 [source](https://github.com/asilinwei/array-polyfill/blob/master/src/flattenDepth.js)       
